@@ -64,7 +64,7 @@ async def song(_, message: Message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫\n⎊ **العنوان :** [{title[:23]}]({link})\n⎊ **المده :** `{duration}`\n⎊ ** بواسطة :** {BOT_MENTION}\n‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫"
+        rep = f"‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ چافا ⦔ ♢━‌‌‏⌯⊷≫\n⎊ **العنوان :** [{title[:23]}]({link})\n⎊ **المده :** `{duration}`\n⎊ ** بواسطة :** {BOT_MENTION}\n‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ چافا ⦔ ♢━‌‌‏⌯⊷≫"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
