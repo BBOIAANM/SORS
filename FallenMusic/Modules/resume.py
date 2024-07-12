@@ -36,7 +36,7 @@ async def res_str(_, message: Message):
         pass
 
     if await is_streaming(message.chat.id):
-        return await message.reply_text("انت موقفني اكتب كمل عشان اشتغل تاني")
+        return await message.reply_text("انت موقفني اكتب كمل عشان اشتغل مره ثانية")
     await stream_on(message.chat.id)
     await pytgcalls.resume_stream(message.chat.id)
     return await message.reply_text(
