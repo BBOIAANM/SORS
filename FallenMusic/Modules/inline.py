@@ -39,7 +39,7 @@ async def inline_query_handler(_, query):
             await app.answer_inline_query(
                 query.id,
                 results=answers,
-                switch_pm_text="اكتب آي حاجة هبحث عنها في اليوتيوب ⚡",
+                switch_pm_text="اكتب اي شي تريد تبحث عنة بليوتيوب ⚡",
                 cache_time=10,
             )
         except:
@@ -68,7 +68,7 @@ async def inline_query_handler(_, query):
                 ]
             )
             searched_text = f"""
-‌‌‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫
+‌‌‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ چافا ⦔ ♢━‌‌‏⌯⊷≫
 ⎊ **العنوان :** [{title}]({link})
 
 ⎊ **المدة :** `{duration}`دقيقه
@@ -77,7 +77,7 @@ async def inline_query_handler(_, query):
 ⎊ **القناة :** [{channel}]({channellink})
 
 <u>⎊ **بوآسـطه  {BOT_NAME}**</u>
-‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫"""
+‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ چافا ⦔ ♢━‌‌‏⌯⊷≫"""
             answers.append(
                 InlineQueryResultPhoto(
                     photo_url=thumbnail,
