@@ -9,8 +9,8 @@ import random
 from pyrogram import Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from strings.filters import command
-from AnonXMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from AnonXMusic import app
+from FallenMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from FallenMusic import app
 from random import  choice, randint
 
 #          
@@ -20,11 +20,13 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_video(
         video=f"https://telegra.ph/file/46acb5dfcebe609eb25eb.mp4",
-        caption=f"""᭙ᥱᥣᥴ᥆ꪔᥱ ƚ᥆ ᥉᥆ᥙᖇᥴᥱ ɦ᥆ᖇ᥉ᥱ
+        caption=f"""هلابيك وردة بسورس چافا يا حلو
+• اذا تريد تنصب مثل هالبوت تواصل مع مطور السورس
+• عندك استفسار او اقتراح بخصوص البوت تواصل مع مطور البوت
 
-ƚɦᥱ ხᥱ᥉ƚ ᥉᥆ᥙᖇᥴᥱ ᥆ꪀ ƚᥱᥣᥱgᖇᥲꪔ
+سورس چافا المتطور | 🔥
 
-ƒ᥆ᥣᥣ᥆᭙ ƚɦᥱ ხᥙƚƚ᥆ꪀ᥉ ხᥱᥣ᥆᭙""",
+تابعو تحديثات البوت ألان | 👇""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
